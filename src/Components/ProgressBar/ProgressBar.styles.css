@@ -1,0 +1,77 @@
+.ProgressBar {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.ProgressBar-Container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.ProgressBar-GreyColor {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+}
+.Step-Shipping:after {
+  font-family: inherit;
+
+  color: black;
+  content: "Shipping";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: -5px;
+  font-size: 16px;
+  right: 0;
+}
+.Step-Billing:after {
+  font-family: inherit;
+
+  color: black;
+  content: "Billing";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 5px;
+  font-size: 16px;
+  right: 0;
+}
+.ProgressBar-RedColor-Placeholder {
+  width: 33.3%;
+  height: 10px;
+}
+.ProgressBar-RedColor {
+  width: 0;
+  height: 100%;
+  background-color: brown;
+  transition: width 1s ease-in;
+}
+
+.ProgressBar-Steps {
+  width: 33.3%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.RedColor-middle {
+  width: calc(100% - 150px);
+}
+.ProgressBar-Step {
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  width: 75px;
+  height: 75px;
+  border: 10px solid #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
