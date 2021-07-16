@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import "./ProgressBar.styles.css";
-import Tick from "../../tick.svg";
 
 class ProgressBar extends PureComponent {
   constructor(props) {
